@@ -4,13 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "node index.js", // 바뀐내용이 있다면 서버를 껏다 켜줘야한다.
+    "backend": "nodemon index.js", // 에디터에서 바뀐내용을 저장하면 바뀐내용을 확인하고 알아서 서버를 껏다 켜준다.
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "doyeon",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "mongoose": "^5.9.28"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
   }
 }
